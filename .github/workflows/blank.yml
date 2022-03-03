@@ -19,18 +19,18 @@ jobs:
       - name: Run a one-line script
         run: date
   job2:
-    runs_on: winddows-latest
+    runs-on: winddows-latest
     steps:
       - name: Run script Windows
         run: "get-date"
   job3:
-    runs_on: macos_latest
+    runs-on: macos_latest
     steps:
       - name: script mac
         run: date
   job4:
-    runs_on: macos_latest
-    depends_on: [1,2,3]
+    runs-on: macos_latest
+    needs: [job1, job2, job3]
     steps:
       - name: script mac
         run: date
