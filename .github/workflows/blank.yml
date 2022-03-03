@@ -29,7 +29,7 @@ jobs:
       - name: script mac
         run: date
   job4:
-    runs-on: macos_latest
+    runs-on: macos-latest
     needs: [job1, job2, job3]
     steps:
       - name: script mac
