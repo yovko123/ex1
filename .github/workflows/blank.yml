@@ -19,12 +19,12 @@ jobs:
       - name: Run a one-line script
         run: date
   job2:
-    runs-on: winddows-latest
+    runs-on: windows-latest
     steps:
       - name: Run script Windows
         run: "get-date"
   job3:
-    runs-on: macos_latest
+    runs-on: macos-latest
     steps:
       - name: script mac
         run: date
